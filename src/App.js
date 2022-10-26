@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -15,8 +15,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aqui va la Aplicaion de sorteo y este es un numero aleatorio
+          
         </a>
+        <p>{Math.round(Math.random() * 100)}</p>
       </header>
     </div>
   );
