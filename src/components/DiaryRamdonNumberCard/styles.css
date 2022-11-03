@@ -9,6 +9,13 @@
 
 }
 
+.winner-text {
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    
+}
+
 .ramdon-number {
     font-size: 100px;
     font-family: 'Lobster', cursive;

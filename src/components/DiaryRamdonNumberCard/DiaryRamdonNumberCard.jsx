@@ -5,20 +5,25 @@ const DiaryRamdonNumberCard = ({ ramdonNumber, date }) => {
     "Domingo",
     "Lunes",
     "Martes",
-    "Miercoles",
+    "Míercoles",
     "Jueves",
     "Viernes",
-    "Sabado",
+    "Sábado",
   ];
 
-  let createdAt = new Date(date - 3600000);
+  let createdAt = new Date(date);
+  let thisday = new Date().getDate();
 
   return (
     <section>
       <div className="card">
+        <h3 className="winner-text">
+          El número ganador de{" "}
+          {thisday === createdAt.getDate() ? "hoy" : "ayer"} es
+        </h3>
         <h2 className="ramdon-number">{ramdonNumber}</h2>
         <p className="day-of-week">{daysOfweek[createdAt.getDay()]}</p>
-        <p className="create-at" >{createdAt.toLocaleDateString()}</p>
+        <p className="create-at">{createdAt.toLocaleDateString()}</p>
       </div>
     </section>
   );
