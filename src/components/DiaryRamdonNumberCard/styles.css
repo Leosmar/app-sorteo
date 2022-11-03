@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+
+}
+
+.ramdon-number {
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.day-of-week {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.day-of-week, .create-at {
+    color: rgba(255, 255, 255);
+}
