@@ -5,7 +5,7 @@ const DiaryRamdonNumberCard = ({ ramdonNumber, date }) => {
     "Domingo",
     "Lunes",
     "Martes",
-    "Míercoles",
+    "Miércoles",
     "Jueves",
     "Viernes",
     "Sábado",
@@ -19,7 +19,7 @@ const DiaryRamdonNumberCard = ({ ramdonNumber, date }) => {
       <div className="card">
         <h3 className="winner-text">
           El número ganador de{" "}
-          {thisday === createdAt.getDate() ? "hoy" : "ayer"} es
+          {thisday === createdAt.getDate() ? "hoy es" : "ayer fue"}
         </h3>
         <h2 className="ramdon-number">{ramdonNumber}</h2>
         <p className="day-of-week">{daysOfweek[createdAt.getDay()]}</p>
